@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Integration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">API Integration</h1>
+
+        <!-- Weather Section -->
+        <div id="weather-section" class="my-4">
+            <h2>Weather Information</h2>
+            <form id="weather-form">
+                <div class="form-group">
+                    <label for="city-input">Enter City Name:</label>
+                    <input type="text" id="city-input" class="form-control" placeholder="City Name">
+                </div>
+                <button type="submit" class="btn btn-primary">Get Weather</button>
+            </form>
+            <div id="weather-result" class="mt-4"></div>
+        </div>
+
+        <!-- Country Section -->
+        <div id="country-section" class="my-4">
+            <h2>Country Information</h2>
+            <button id="get-country-info" class="btn btn-primary">Get Country Info</button>
+            <div id="country-result" class="mt-4"></div>
+        </div>
+
+        <!-- Quotes Section -->
+        <div id="quotes-section" class="my-4">
+            <h2>Random Quote</h2>
+            <button id="get-quote" class="btn btn-primary">Get Quote</button>
+            <div id="quote-result" class="mt-4"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
